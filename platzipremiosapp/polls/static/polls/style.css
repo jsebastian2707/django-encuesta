@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
+h1{
+    position: relative;
+    top: 10px;
+    font-size: 1.8em;
+    margin: 0px auto 10%;
+}
+
+ul{
+    display: inline-block;
+    list-style: none;
+    margin:0px auto;
+    padding-inline-start: 0px;
+}
+
+input[type="submit"]{
+    display: block;
+    font-size: 1em;
+    margin: 10px auto;
+    background: none;
+    color: azure;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+form{
+    margin: 0 160px;
+    padding-top: 3px;
+}
+
+footer{
+    position: absolute;
+    height: 30px;
+    width: 340px;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: -155px;
+    left: 0;
+    font-size: 0.5em;
+    transform: rotate(90deg);
+}
+
+.github{
+    position: absolute;
+    top: 50%;
+    width: 270px;
+    height: 30px;
+    margin-top: -15px;
+    margin-right: -120px;
+    right: 0;
+    font-size: 0.5em;
+    transform: rotate(-90deg);
+}
+
+.flicker{
+    animation: flicker 1.5s infinite alternate;
+}
+
+.form-title{
+    margin: 0px auto 5%;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+    0%, 18%, 22%, 26%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 2px #fff,
+        0 0 7px #fff,
+        0 0 20px #0fa,
+        0 0 40px #0fa,
+        0 0 45px #0fa,
+        0 0 60px rgb(0, 160, 107),
+        0 0 75px rgb(0, 109, 73);
+    }
+
+    20%, 24%,25%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+  
+  
